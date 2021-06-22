@@ -17,7 +17,7 @@ plugins {
 apply plugin: "org.jetbrains.changelog"
 
 group pluginGroup
-version pluginVersion
+version "${pluginVersion}+${UUID.randomUUID().toString()}"
 
 sourceCompatibility = 1.8
 
