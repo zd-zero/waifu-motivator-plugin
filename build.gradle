@@ -17,9 +17,7 @@ plugins {
 apply plugin: "org.jetbrains.changelog"
 
 group pluginGroup
-version pluginVersion
-//version "${pluginVersion}.17a39766121"
-//version "${pluginVersion}.${Long.toHexString(new Date().getTime())}"
+version System.getenv().getOrDefault("VERSION", pluginVersion)
 
 sourceCompatibility = 1.8
 
